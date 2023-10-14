@@ -14,6 +14,6 @@ function bombNums(arr1, arr2) {
     console.log(sum);
 }
 bombNums([1, 1, 2, 1, 1, 1, 2, 1, 1, 1], [2, 1]);
-bombNums([1, 7, 7, 1, 2, 3],[7, 1])
-bombNums([1, 4, 4, 2, 8, 9,1],[9, 3]);
- bombNums([1, 2, 2, 4, 2, 2,2, 9],[4, 2])
+//bombNums([1, 7, 7, 1, 2, 3],[7, 1])
+//bombNums([1, 4, 4, 2, 8, 9,1],[9, 3]);
+ //bombNums([1, 2, 2, 4, 2, 2,2, 9],[4, 2])
