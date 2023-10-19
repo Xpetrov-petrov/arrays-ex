@@ -1,13 +1,13 @@
-function solve(arr){
-    let wagons = arr[0].split(' ').map(Number);
-    let capacity = Number(arr[1]);
+function solve(n, k){
+let arr = [1];
 
-    
+for(let i = 1; i < n; i ++){
+  let sum = 0;
+  for(let j = Math.max(0, i - k); j < i; j++){
+    sum += arr[j]
+  }
+  arr.push(sum);
 }
-solve(['32 54 21 12 4 0 23',
-'75',
-'Add 10',
-'Add 0',
-'30',
-'10',
-'75']);
+console.log(arr.join(' '));
+}
+solve(8, 2);
