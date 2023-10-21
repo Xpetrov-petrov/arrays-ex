@@ -10,5 +10,5 @@ function numbers(input) {
     }
 
 }
-//numbers('10 20 30 40 50');
+// numbers('10 20 30 40 50');
 numbers('5 2 3 4 -10 30 40 50 20 50 60 60 51');
