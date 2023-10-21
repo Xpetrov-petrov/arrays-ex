@@ -170,4 +170,4 @@ solve(['2>3>4>5>2',
     'Defend 0 4 11',
     'Repair 3 18',
     'Retire']);
->>>>>>> 84ebd005a2df8c86c14bf9b7409ab9fd8d94222f
+
