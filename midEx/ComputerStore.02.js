@@ -8,7 +8,7 @@ function computerStore(arr) {
         let price = Number(command);
 
         if (price <= 0) {
-            console.log("Invalid price");
+            console.log("Invalid price!");
             command = arr.shift();
             continue;
         }
@@ -17,20 +17,19 @@ function computerStore(arr) {
         command = arr.shift();
     }
     if(priceNoTax == 0){
-        console.log("Invalid price");
+        console.log("Invalid order!");
       }else{
         tax += 0.20 * priceNoTax;
         priceWhitTax += priceNoTax + tax;
         if(command == "special"){
             priceWhitTax *= 0.90;
           }
-      }
-      console.log(`Congratulations you\'ve just bought a new computer!`);
-      console.log(`Price without taxes: ${priceNoTax.toFixed(2)}$`);
-      console.log(`Taxes: ${tax.toFixed(2)}$`);
-      console.log('------------');
-      console.log(`Total price: ${priceWhitTax.toFixed(2)}`);
-      
+          console.log(`Congratulations you\'ve just bought a new computer!`);
+          console.log(`Price without taxes: ${priceNoTax.toFixed(2)}$`);
+          console.log(`Taxes: ${tax.toFixed(2)}$`);
+          console.log('-----------');
+          console.log(`Total price: ${priceWhitTax.toFixed(2)}$`);
+      } 
 }
 computerStore([
     '1023',
